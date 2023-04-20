@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://level/common/level_portal/LevelPortal.gd" type="Script" id=1]
+[ext_resource path="res://tiles/tileset.png" type="Texture" id=2]
+
+[node name="LevelPortal" type="Area2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 288, 80, 64 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+position = Vector2( -1.66968, 7.80982 )
+scale = Vector2( 4.80623e-06, 1.41735e-06 )
+polygon = PoolVector2Array( -37485.2, -2.79467e+07, 1.79748e+06, -2.79863e+07, 2.97793e+06, -2.26755e+07, 6.18035e+06, 1.67196e+07, -6.06831e+06, 1.67592e+07, -5.93975e+06, 1.30733e+07, -4.40867e+06, 7.8418e+06, -3.31003e+06, 7.8418e+06, -3.25159e+06, -2.06642e+06, -2.1062e+06, -8.68512e+06, -2.21139e+06, -1.39563e+07 )
